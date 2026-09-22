@@ -3,7 +3,8 @@ import functions as f
 
 f.limparTela()
 
-catalogo = []
+catalogo = f.carregarCatalogo()
+
 while True:
     f.exibirMenu()
     
@@ -34,4 +35,4 @@ while True:
                 
     except ValueError:
         print("Só aceitamos número.")
-        f.enterParaContinuar()
+        f.enterParaContinuar() 
